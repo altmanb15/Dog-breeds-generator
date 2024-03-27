@@ -7,36 +7,40 @@
     <title>AI Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Dog Breed generator!</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the Breed of dog"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>the information here</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/altmanb15" target="_blank">Brooke Altman</a>
-      and is open-sourced on
-      <a
-        href="https://github.com/altmanb15/Dog-breeds-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://dog-breeds-generator-bja.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Dog Breed Generator!</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the Breed of dog"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+
+        <div class="breed">the information here</div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/altmanb15" target="_blank">Brooke Altman</a>
+        and is open-sourced on
+        <a
+          href="https://github.com/altmanb15/Dog-breeds-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://dog-breeds-generator-bja.netlify.app/" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
