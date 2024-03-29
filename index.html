@@ -15,20 +15,22 @@
         <h1>AI Dog Breed Generator!</h1>
       </header>
       <main>
-        <form id="breed-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the Breed of dog"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-
-        <div class="breed" id="breed"></div>
+        <div class="form-container">
+          <form id="breed-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the Breed of dog"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Pitbull, Great Dane or German Shepherd</div>
+        </div>
+        <div class="breed hidden" id="breed"></div>
       </main>
       <footer>
         This AI project was coded by
