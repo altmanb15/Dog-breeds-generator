@@ -1,13 +1,23 @@
-function generateBreed(event) {
-  event.preventDefault();
-
+function displayBreed(response) {
   new Typewriter("#breed", {
-    strings: [""],
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
-  breedElement.innerHTML = "";
+}
+
+function generateBreed(event) {
+  event.preventDefault();
+
+  let instructionsInput = document.querySelector("#user-instructions");
+  let apiKey: "f5o451fb0d10a278db1ta3c93af21731";
+  let prompt = `User instructions are: Generate information on dog breed that ${instructionsInput.value}`;
+  let context =
+    "You are an expert about dog breeds and you love to give short and direct information about each breed in basic HTML. Make sure to follow the unser instructions.";
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiURL).then(displayBreed);
 }
 
 let breedFormElement = document.querySelector("#breed-generator-form");
