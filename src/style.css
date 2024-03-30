@@ -71,9 +71,10 @@ footer {
   margin-top: 30px;
 }
 .blink {
-  animation: blink-aniamtion 1s steps(5, start) infinite;
+  animation: blink-animation 1s steps(5, start) infinite;
 }
-@keyframes blink {
+
+@keyframes blink-animation {
   to {
     visibility: hidden;
   }

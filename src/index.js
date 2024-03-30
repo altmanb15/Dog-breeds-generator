@@ -19,7 +19,7 @@ function generateBreed(event) {
 
   let breedElement = document.querySelector("#breed");
   breedElement.classList.remove("hidden");
-  breedElement.innerHTML = `<div class="blink" ⏳ Generating the ${instructionsInput.value} information.<div>`;
+  breedElement.innerHTML = `<div class="blink"> ⏳ Generating the ${instructionsInput.value} information.<div>`;
 
   axios.get(apiURL).then(displayBreed);
 }
